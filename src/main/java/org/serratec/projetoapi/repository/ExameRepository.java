@@ -1,4 +1,9 @@
 package org.serratec.projetoapi.repository;
 
-public interface ExameRepository {
+import org.serratec.projetoapi.domain.Exame;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ExameRepository extends JpaRepository<Exame, Long> {
 }
